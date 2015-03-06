@@ -1747,6 +1747,7 @@ firepad.RichTextToolbar = (function(global) {
 
     if (self.imageInsertionUI) {
       toolbarOptions.push(utils.elt('div', [self.makeButton_('insert-image')], { 'class': 'firepad-btn-group' }));
+      toolbarOptions.push(input);
     }
 
     var toolbarWrapper = utils.elt('div', toolbarOptions, { 'class': 'firepad-toolbar-wrapper' });
